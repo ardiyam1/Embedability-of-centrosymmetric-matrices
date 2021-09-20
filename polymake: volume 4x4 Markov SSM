@@ -1,0 +1,92 @@
+------the set of all 4x4 Markov SSM matrices with the entries parameterization---------
+
+polytope > $p=new Polytope<Rational>(INEQUALITIES=><<".");
+polytope (2)> 0 1 0 0 0 0 0
+polytope (3)> 0 0 1 0 0 0 0
+polytope (4)> 0 0 0 1 0 0 0
+polytope (5)> 0 0 0 0 1 0 0
+polytope (6)> 0 0 0 0 0 1 0
+polytope (7)> 0 0 0 0 0 0 1
+polytope (8)> 1 -1 -1 -1 0 0 0
+polytope (9)> 1 0 0 0 -1 -1 -1
+polytope (10)> .
+
+polytope > print $p->VOLUME;
+polymake: used package cdd
+  cddlib
+  Implementation of the double description method of Motzkin et al.
+  Copyright by Komei Fukuda.
+  http://www-oldurls.inf.ethz.ch/personal/fukudak/cdd_home/
+
+polymake: used package ppl
+  The Parma Polyhedra Library (PPL): A C++ library for convex polyhedra
+  and other numerical abstractions.
+  http://www.cs.unipr.it/ppl/
+
+1/36 --- this is the volume of the set of all Markov SSM matrices with the entries parameterization
+
+------------------------------------------------------------------------------------------------------
+
+
+
+
+--------------the set of all 4x4 Markov SSM matrices that are DLC with the entries parameterization---
+
+polytope > $p=new Polytope<Rational>(INEQUALITIES=><<".");
+polytope (2)> 0 1 0 0 0 0 0
+polytope (3)> 0 0 1 0 0 0 0
+polytope (4)> 0 0 0 1 0 0 0
+polytope (5)> 0 0 0 0 1 0 0
+polytope (6)> 0 0 0 0 0 1 0
+polytope (7)> 0 0 0 0 0 0 1
+polytope (8)> 1 -1 -1 -1 0 0 0
+polytope (9)> 1 0 0 0 -1 -1 -1
+polytope (10)> 1 -2 -1 -1 0 0 0
+polytope (11)> 1 -1 -2 -1 0 0 0
+polytope (12)> 1 -1 -1 -2 0 0 0
+polytope (13)> 1 0 0 0 -2 -1 -1
+polytope (14)> 1 0 0 0 -1 -2 -1
+polytope (15)> 1 0 0 0 -1 -1 -2
+polytope (16)> .
+
+polytope > print $p->VOLUME;
+polymake: used package cdd
+  cddlib
+  Implementation of the double description method of Motzkin et al.
+  Copyright by Komei Fukuda.
+  http://www-oldurls.inf.ethz.ch/personal/fukudak/cdd_home/
+
+polymake: used package ppl
+  The Parma Polyhedra Library (PPL): A C++ library for convex polyhedra
+  and other numerical abstractions.
+  http://www.cs.unipr.it/ppl/
+
+1/576--- this is the volume of the set of all Markov SSM matrices that are DLC with the entries parameterization
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+------the set of all Markov SSM matrices that are diagonally dominant with the entries parameterization------------
+
+
+polytope > $p=new Polytope<Rational>(INEQUALITIES=><<".");
+polytope (2)> 0 1 0 0 0 0 0
+polytope (3)> 0 0 1 0 0 0 0
+polytope (4)> 0 0 0 1 0 0 0
+polytope (5)> 0 0 0 1 0 0 0
+polytope (6)> 0 0 0 0 0 1 0
+polytope (7)> 0 0 0 0 0 0 1
+polytope (8)> 1 -1 -1 -1 0 0 0
+polytope (9)> 1 0 0 0 -1 -1 -1
+polytope (10)> 1 -2 -2 -2 0 0 0
+polytope (11)> 1 0 0 0 -2 -2 -2
+polytope (12)> .
+
+
+polytope > print $p->VOLUME;
+1/2304  --------- this is the volume of the set of all Markov SSM matrices that are diagonally dominant with the entries parameterization
+
+------------------------------------------------------------------------------------------------------------------------------------------
